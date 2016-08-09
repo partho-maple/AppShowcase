@@ -36,9 +36,11 @@ Ever wanted a way of easily showing all your iOS applications to your app users 
 ### Step One
 
 - Import the following frameworks into your project
+
 ![Frameworks](/Screenshot/Frameworks.png?raw=true)
 
 - The next thing you will need to do, is to import the AppShowcase code, UI and image files into your new or existing Xcode project. Open the AppShowcase folder and you will 'AppShowcase Files'. Import that folder into your project. Once you have imported the 'AppShowcase Files', you will need to import the required images into your “Images.xcassets” directory. folders must be imported into your Xcode project otherwise AppGallery will not function.
+
 ![Assets](/Screenshot/Assets.png?raw=true)
 
 
@@ -89,10 +91,14 @@ links that you want to access in your app - More secure).
 For more information about this, take a look at this detailed Stack Overflow post: http://stackoverflow.com/a/30732693/1598906
 
 - For the purposes of this tutorial, we will be using the lazy method (hehe). Click on your Xcode project in the left hand navigation bar and then select “Info”.
+
 ![ProjectInfo](/Screenshot/ProjectInfo.png?raw=true)
 
+
 - Then add the following to your plist file:
+
 ![plist_changes](/Screenshot/plist_changes.png?raw=true)
+
 
 ## Author
 
