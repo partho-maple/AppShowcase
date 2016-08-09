@@ -36,10 +36,10 @@ Ever wanted a way of easily showing all your iOS applications to your app users 
 ### Step One
 
 - Import the following frameworks into your project
-![Frameworks](/Screenshot/Frameworks.tiff?raw=true)
+![Frameworks](/Screenshot/Frameworks.png?raw=true)
 
 - The next thing you will need to do, is to import the AppShowcase code, UI and image files into your new or existing Xcode project. Open the AppShowcase folder and you will 'AppShowcase Files'. Import that folder into your project. Once you have imported the 'AppShowcase Files', you will need to import the required images into your “Images.xcassets” directory. folders must be imported into your Xcode project otherwise AppGallery will not function.
-![Assets](/Screenshot/Assets.tiff?raw=true)
+![Assets](/Screenshot/Assets.png?raw=true)
 
 
 ### Step Two
@@ -73,6 +73,20 @@ tutorial, we will be opening the AppGallery view with a simple IBAction like so:
 
 ```
 
+
+### Step Three
+
+AppShowcase requires network access in order to be able to access App Store data. On devices running iOS 9 (and higher), you may get a
+warning along the lines of: “Application Transport Security has blocked a cleartext HTTP (http://) resource load since it is
+insecure. Temporary exceptions can be configured via your app's Info.plist file”.
+There are two ways to handle this, you can either:
+
+- Disable App Transport Security (Easy - Less secure).
+
+- Or specify certain website URLs (such as the iTunes API URL) in the Info.plist file (A bit harder as you have to specify all the website
+
+links that you want to access in your app - More secure).
+For more information about this, take a look at this detailed Stack Overflow post: http://stackoverflow.com/a/30732693/1598906
 
 
 
