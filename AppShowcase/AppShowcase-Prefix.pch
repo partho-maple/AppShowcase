@@ -1,0 +1,27 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+/*************************************************************
+ * IMPORTANT NOTE:                                           *
+ * This application has been designed for iOS 8 and higher,  *
+ * some of the functionality of this application will NOT    *
+ * work with lower versions of iOS.                          *
+ *                                                           *
+ * If you need any help, please send me an email:            *
+ *                                                           *
+ * partho.maple@gmail.com                                    *
+ *************************************************************/
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif

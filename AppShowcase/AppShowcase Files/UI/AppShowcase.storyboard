@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rq5-sZ-43M">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--App Showcase-->
+        <scene sceneID="tPT-TP-mYO">
+            <objects>
+                <tableViewController id="YLU-Zl-s1U" customClass="AppShowcaseView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="a6G-3v-B8O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="YLU-Zl-s1U" id="LuN-eh-JP4"/>
+                            <outlet property="delegate" destination="YLU-Zl-s1U" id="sHf-Pd-sl4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="App Showcase" id="q6G-fu-wdz"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="lXB-7e-Jiq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="app_table" destination="a6G-3v-B8O" id="2zl-7D-Un1"/>
+                        <outlet property="pull_indicator" destination="lXB-7e-Jiq" id="gFY-D3-A5c"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMf-yN-T1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="457.39436619718305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="94U-PJ-lzP">
+            <objects>
+                <navigationController id="Rq5-sZ-43M" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="N2B-Rh-69h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YLU-Zl-s1U" kind="relationship" relationship="rootViewController" id="Me5-ji-7Kz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2A-bR-DWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658.125" y="457.39436619718305"/>
+        </scene>
+    </scenes>
+</document>
