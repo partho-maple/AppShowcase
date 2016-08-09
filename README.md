@@ -76,17 +76,31 @@ tutorial, we will be opening the AppGallery view with a simple IBAction like so:
 
 ### Step Three
 
-AppShowcase requires network access in order to be able to access App Store data. On devices running iOS 9 (and higher), you may get a
+- AppShowcase requires network access in order to be able to access App Store data. On devices running iOS 9 (and higher), you may get a
 warning along the lines of: “Application Transport Security has blocked a cleartext HTTP (http://) resource load since it is
 insecure. Temporary exceptions can be configured via your app's Info.plist file”.
 There are two ways to handle this, you can either:
 
-- Disable App Transport Security (Easy - Less secure).
+  1) Disable App Transport Security (Easy - Less secure).
 
-- Or specify certain website URLs (such as the iTunes API URL) in the Info.plist file (A bit harder as you have to specify all the website
+  2) Or specify certain website URLs (such as the iTunes API URL) in the Info.plist file (A bit harder as you have to specify all the website
 
 links that you want to access in your app - More secure).
 For more information about this, take a look at this detailed Stack Overflow post: http://stackoverflow.com/a/30732693/1598906
+
+- For the purposes of this tutorial, we will be using the lazy method (hehe). Click on your Xcode project in the left hand navigation bar and then select “Info”.
+![ProjectInfo](/Screenshot/ProjectInfo.png?raw=true)
+
+- Then add the following to your plist file:
+![plist_changes](/Screenshot/plist_changes.png?raw=true)
+
+## Author
+
+Partho Biswas, partho.maple@gmail.com
+
+## License
+
+AppShowcase is available under the MIT license.
 
 
 
