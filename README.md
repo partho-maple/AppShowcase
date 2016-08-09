@@ -7,8 +7,8 @@ Ever wanted a way of easily showing all your iOS applications to your app users 
 ##Features:
 
 - [x] Supports the latest App Store API – No need to host any app images, info, data…. All data is downloaded live from Apple.
-- [x] AppGallery can only show apps from developer accounts which are live on the App Store. If you are new developer and are still waiting for your first app to go live on the App Store, then AppGallery will only work once your first app has gone live.
-- [x] AppGallery can be imported and used in any Storyboard or XIB based iOS application.
+- [x] AppShowcase can only show apps from developer accounts which are live on the App Store. If you are new developer and are still waiting for your first app to go live on the App Store, then AppShowcase will only work once your first app has gone live.
+- [x] AppShowcase can be imported and used in any Storyboard or XIB based iOS application.
 - [x] Super easy to implement into your new or existing iOS applications. 
 - [x] Universal support: Supports iPhone, iPad and iPod Touch devices.
 - [x] Social app sharing: Includes support for sharing via Facebook, Twitter and Email.
@@ -39,7 +39,7 @@ Ever wanted a way of easily showing all your iOS applications to your app users 
 
 ![Frameworks](/Screenshot/Frameworks.png?raw=true)
 
-- The next thing you will need to do, is to import the AppShowcase code, UI and image files into your new or existing Xcode project. Open the AppShowcase folder and you will 'AppShowcase Files'. Import that folder into your project. Once you have imported the 'AppShowcase Files', you will need to import the required images into your “Images.xcassets” directory. folders must be imported into your Xcode project otherwise AppGallery will not function.
+- The next thing you will need to do, is to import the AppShowcase code, UI and image files into your new or existing Xcode project. Open the AppShowcase folder and you will 'AppShowcase Files'. Import that folder into your project. Once you have imported the 'AppShowcase Files', you will need to import the required images into your “Images.xcassets” directory. folders must be imported into your Xcode project otherwise AppShowcase will not function.
 
 ![Assets](/Screenshot/Assets.png?raw=true)
 
@@ -60,9 +60,9 @@ Open the ‘AppShowcaseView.h’ file.
 
 ```
 
-- The next thing you will need to do is to add a button/action/method/etc in your application which will open the AppGallery view.
+- The next thing you will need to do is to add a button/action/method/etc in your application which will open the AppShowcase view.
 Some developers like to add a ‘more apps’ button in the info page section of there apps. This is up to you. For the purposes of this
-tutorial, we will be opening the AppGallery view with a simple IBAction like so:
+tutorial, we will be opening the AppShowcase view with a simple IBAction like so:
 
 ```objective-c
 
