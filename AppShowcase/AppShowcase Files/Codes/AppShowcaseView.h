@@ -22,9 +22,9 @@
 #import <StoreKit/StoreKit.h>
 #import "CustomCell.h"
 
-// Replace 'danielsadjadian' with your developer name. make sure your
+// Replace 'parthobiswas' with your developer name. make sure your
 // developer name is typed like the above with no spaces or capital letters.
-#define DEV_NAME @"danielsadjadian"
+#define DEV_NAME @"parthobiswas"
 
 @class CustomCell;
 @interface AppShowcaseView : UITableViewController <UITableViewDataSource, UITableViewDelegate, SKStoreProductViewControllerDelegate> {
