@@ -19,9 +19,14 @@ Ever wanted a way of easily showing all your iOS applications to your app users 
 
 ##Screenshot:
 
-![MainScene](/Screenshot/MainScene.png?raw=true)  
+![MainScene](/Screenshot/MainScene.png?raw=true)          
+
+
 ![DetailScene](/Screenshot/DetailScene.png?raw=true)
+
+
 ![DetailScene02](/Screenshot/DetailScene.png?raw=true)
+
 
 
 ## Requirements
